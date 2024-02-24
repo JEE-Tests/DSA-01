@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./quiz.css">
+    <link rel="icon" href="./public/favicon.png" type="image/png">
+    <title>Quiz App</title>
+</head>
+
+<body>
+    <header>
+        <div class="left_side">
+            <img id="logo" src="../diversion/public/logo_cropped.png" alt="Techy Logo">
+        </div>
+        <div class="right_side">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">To-Do List</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+                <div class="search">
+                    <i class="bi bi-search"></i>
+                    <input type="text" placeholder="Search Projects">
+                </div>
+                <button class="button-63" role="button">Log In</button>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="card-section">
+            <h2 class="heading">Let's test your understanding</h2>
+            <div class="card" onclick="openQuiz('quiz1.html')">
+                <h3>Quiz 1</h3>
+                <br>
+                <p>introduction</p>
+            </div>
+            <div class="card" onclick="openQuiz('quiz2.html')">
+                <h3>Quiz 2</h3>
+                <br>
+                <p>Backend Practice Questions</p>
+            </div>
+            <div class="card" onclick="openQuiz('quiz3.html')">
+                <h3>Quiz 3</h3>
+                <br>
+                <p>Devops Practice Questions</p>
+            </div>
+        </section>
+    </main>
+    <script>
+        function openQuiz(quizUrl) {
+            window.location.href = quizUrl;
+        }
+    </script>
+</body>
+
+</html>
